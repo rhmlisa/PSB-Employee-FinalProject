@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.f56.datakaryawan">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home"
+            android:screenOrientation="portrait"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ListItem"
+            android:screenOrientation="portrait"
+            android:label="List Karyawan"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".SemuaKaryawan"
+            android:screenOrientation="portrait"
+            android:label="Daftar Karyawan"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".Info"
+            android:screenOrientation="portrait"
+            android:label="Info Aplikasi"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".Input"
+            android:screenOrientation="portrait"
+            android:label="Input Karyawan"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".DetailKaryawan"
+            android:screenOrientation="portrait"
+            android:label="Detail Karyawan"
+            android:theme="@style/AppTheme1">
+        </activity>
+    </application>
+
+</manifest>

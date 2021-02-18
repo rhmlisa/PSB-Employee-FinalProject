@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8b8a65"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="20dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Input">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_location_city_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Karyawan"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Karyawan"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jabatan Karyawan"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextDesg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaji Karyawan"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/stylebutton"
+            android:padding="10dp"
+            android:text="UBAH DATA"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/buttonUpdate"
+            android:background="@drawable/stylebutton"
+            android:padding="10dp"
+            android:text="HAPUS DATA"
+            android:textColor="#ffff" />
+    </RelativeLayout>
+</LinearLayout>
